@@ -1,0 +1,150 @@
+
+/* Page Html */
+
+html{
+  background: white;
+  overflow-y: scroll; /*barre de defilement seulement à gauche*/
+  /*height: 45px;/* défini la div en hauteur*/
+  /*width: 141px;/* défini la div en largeur*/
+}
+
+
+/*Gestion du Menu de Navigation**********************************************************************************************************************/
+
+.sidenav {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 100%;
+  background-color: #333;
+  box-shadow: 3px 0px 5px 0 rgba(17, 17, 17, 0.8);
+  position: fixed;
+}
+
+#Sidenav {
+  top: 0px;
+  left: 0px;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+
+/****************************************************************************************************************************************************/
+
+/*Index*/
+
+body{
+  margin: 0px;
+}
+
+h1.index{
+  top: 0px;
+  left: 200px;
+  position: absolute;
+  padding:1%;
+  padding-right: 2%;
+  padding-left: 2%;
+
+  font-size: 185%;
+  font-family:"Segoe UI",Arial,sans-serif;
+  color : #333;
+
+  background-color: rgba(255, 255, 255, 0.6);
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(51, 51, 51, 0.7), 3px 5px 5px 0 rgba(51, 51, 51, 1);
+}
+
+div.index{
+  width: 70%;
+
+  top: 150px;
+  left: 17%;
+  position: absolute;
+  padding:0.2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  
+  text-align: justify;
+  font-size: 120%; 
+  font-family:"Segoe UI",Arial,sans-serif;
+  color:#333;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(51, 51, 51, 0.5), 3px 5px 5px 0 rgba(51, 51, 51, 1);
+}
+
+/**************************************************************************************************************************************************************/
+
+.image{
+  position: absolute;
+  left: 13px;
+  top: 13px;
+ }
+
+.fond{
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  height: 100%; 
+  z-index: -1;
+}
+
+.logo{
+  width: 80%; 
+  height: 140px; 
+  z-index: 1; 
+  margin: 5%; 
+}

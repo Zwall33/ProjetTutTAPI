@@ -1,0 +1,31 @@
+body {
+  width: 70%;
+  height: auto;
+  top: 2%;
+  left: 20%;
+  position: absolute;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  margin-bottom: 2%;
+
+  background-color: rgba(89, 89, 89, 0.7);
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(51, 51, 51, 0.5), 3px 5px 5px 0 rgba(51, 51, 51, 1);
+}
+
+#calendar {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  font-size: 14px;
+}
+
+.fc-row{
+  border-color:#333;
+}

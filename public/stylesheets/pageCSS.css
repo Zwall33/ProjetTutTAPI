@@ -1,0 +1,393 @@
+
+/* Page Html */
+
+body{
+  margin: 0px;
+}
+
+html{
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../images/image_fond.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  z-index: -1;
+  overflow-y: scroll; /*barre de defilement seulement à gauche*/
+  /*height: 45px;/* défini la div en hauteur*/
+  /*width: 141px;/* défini la div en largeur*/
+}
+
+
+/*Gestion du Menu de Navigation**********************************************************************************************************************/
+
+.Menu {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 100%;
+  background-color: #333;
+  box-shadow: 3px 0px 5px 0 rgba(17, 17, 17, 0.8);
+  position: fixed;
+}
+
+#IdMenu {
+  top: 0px;
+  left: 0px;
+}
+
+nav ul li ul li {
+   max-height:0;
+   overflow: hidden;
+   transition: all 0.5s;
+   background: #474747;
+   border:none;
+   margin:0
+  
+}
+
+.Bouton{
+  list-style-type: none;
+  position: absolute;
+  top: 38%;
+  width: 150px;/* défini la div en largeur*/
+}
+li a#active {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 3px 0px 5px 0 rgba(76, 175, 80, 1);
+}
+
+.Bouton a {
+  display: block;
+  color: white;
+  padding: 4% 3%;
+  text-decoration: none;
+  font-family:"Segoe UI",Arial,sans-serif;
+  text-align: center;
+  height: 45px;/* défini la div en hauteur*/
+  width: 141px;/* défini la div en largeur*/
+}
+
+nav {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+  width: 180px;
+}
+
+nav li#ouvert{
+  max-height: 40px;
+  box-shadow: 2px 0px 5px 0 rgba(71, 71, 71, 1);
+}
+
+nav ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+
+nav ul li a{
+  font-size:150%
+}
+
+nav ul ul li a{
+  font-size:100% 
+}
+
+.principal:hover:not(#active) {
+  background-color: #111;
+  color: white;
+  box-shadow: 2px 0px 5px 0 rgba(17, 17, 17, 1);
+}
+
+.secondaire:hover:not(#active) {
+  background-color: #111;
+  box-shadow: 2px 0px 5px 0 rgba(17, 17, 17, 1);
+
+}
+
+
+/****************************************************************************************************************************************************/
+
+/*Index*/
+
+h1.index{
+  top: 0px;
+  left: 200px;
+  position: absolute;
+  padding:1%;
+  padding-right: 2%;
+  padding-left: 2%;
+
+  font-size: 250%;
+  font-family:"Segoe UI",Arial,sans-serif;
+  color : #333;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(51, 51, 51, 0.5), 3px 5px 5px 0 rgba(51, 51, 51, 1);
+}
+
+div.index{
+  width: 70%;
+  margin-bottom: 20px;
+  top: 150px;
+  left: 17%;
+  position: absolute;
+  padding:0.2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  
+  text-align: justify;
+  font-size: 150%; 
+  font-family:"Segoe UI",Arial,sans-serif;
+  color:#333;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(51, 51, 51, 0.5), 3px 5px 5px 0 rgba(51, 51, 51, 1);
+}
+
+/**************************************************************************************************************************************************************/
+
+                                                /*Tuto*/
+
+h1.Tuto{
+  top: 0px;
+  left: 200px;
+  position: absolute;
+  padding:1%;
+  padding-right: 2%;
+  padding-left: 2%;
+
+  font-size: 250%;
+  font-family:"Segoe UI",Arial,sans-serif;
+  color : #333;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(51, 51, 51, 0.5), 3px 5px 5px 0 rgba(51, 51, 51, 1);
+}
+
+div.Tuto{
+  width: 70%;
+
+  top: 150px;
+  left: 17%;
+  position: absolute;
+  padding:0.2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  
+  text-align: justify;
+  font-size: 150%; 
+  font-family:"Segoe UI",Arial,sans-serif;
+  color:#333;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(51, 51, 51, 0.5), 3px 5px 5px 0 rgba(51, 51, 51, 1);
+}
+
+/**************************************************************************************************************************************************************/
+
+/*Pompes*/
+table.pompes{  
+  top: 50px;
+  left: 10%;
+  width: 90%;
+  position: absolute;
+  border-collapse: separate;
+  border-spacing: 150px 50px;
+}
+
+tr{
+  text-align: center;
+}
+
+h1.pompes{
+  
+  font-size: 250%;
+  font-family:"Segoe UI",Arial,sans-serif;
+  color : #333;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(51, 51, 51, 0.5), 3px 5px 5px 0 rgba(51, 51, 51, 1);
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 1s linear infinite;
+}
+
+
+
+/*******************************************************************************************************************************************************************/
+
+
+.image{
+  position: absolute;
+  left: 13px;
+  top: 13px;
+ }
+
+.logo{
+  width: 80%; 
+  height: 140px; 
+  z-index: 1; 
+  margin: 5%; 
+}
+
+.graph{
+  left: 19%;
+  top: 25%;
+  position: absolute;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  height: 64%;
+  width: 74%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.temperature{
+  background-color: #333;
+  height: 80px;/* défini la div en hauteur*/
+  width: 33%;/* défini la div en largeur*/
+  top: 10%;
+  left: 19%; 
+  position: absolute;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.humidite{
+  background-color: #333;
+  height: 80px;/* défini la div en hauteur*/
+  width: 33%;/* défini la div en largeur*/
+  top: 10%;
+  left: 60%;
+  position: absolute;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.logoHumidite{
+  width: 76px; 
+  height: 76px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+
+.logoTemperature{
+  width: 80px; 
+  height: 80px;
+  position: absolute;
+  left: 0px;
+}
+
+.releves{
+  color: white;
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-size: 150%;
+}
+
+.graph1{
+  left: 19%;
+  top: 25%;
+  position: absolute;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  height: 64%;
+  width: 74%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.graph2{
+  left: 19%;
+  top: 115%;
+  position: absolute;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  height: 64%;
+  width: 74%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.graph3{
+  left: 19%;
+  top: 210%;
+  position: absolute;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  height: 64%;
+  width: 74%;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 100px;
+}
+.luminosite{
+  background-color: #333;
+  height: 80px;/* défini la div en hauteur*/
+    width: 33%;/* défini la div en largeur*/
+    top: 100%;
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.fertilite{
+  background-color: #333;
+  height: 80px;/* défini la div en hauteur*/
+    width: 33%;/* défini la div en largeur*/
+    top: 195%;
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.ancreLuminosite{
+  top: 93%;
+  left: 50%;
+  position: absolute;
+}
+
+.ancreTemperature{
+  top: 0%;
+  left: 50%;
+  position: absolute;
+}

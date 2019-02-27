@@ -1,0 +1,67 @@
+.graph{
+  left: 19%;
+  top: 25%;
+  position: absolute;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  height: 64%;
+  width: 74%;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.Nb_plis_heure{
+  background-color: #545050;
+  height: 80px;/* défini la div en hauteur*/
+  width: 33%;/* défini la div en largeur*/
+  top: 10%;
+  left: 19%; 
+  position: absolute;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Nb_stack_jour{
+  background-color: #545050;
+  height: 80px;/* défini la div en hauteur*/
+  width: 33%;/* défini la div en largeur*/
+  top: 10%;
+  left: 60%;
+  position: absolute;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.stack{
+  width: 85px; 
+  height: 85px;
+  position: absolute;
+  left: 2px;
+  bottom: 1px;
+}
+
+.veneer{
+  width: 75px; 
+  height: 75px;
+  position: absolute;
+  left: 15px;
+  top: 3px;
+}
+
+.releves{
+  color: white;
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-size: 150%;
+}
+
+.graph1{
+  left: 19%;
+  top: 25%;
+  position: absolute;
+  box-shadow: 3px 0px 5px 0 rgba(0, 0, 0, 0.5), 3px 5px 5px 0 rgba(0, 0, 0, 0.5);
+  height: 64%;
+  width: 74%;
+  margin-top: 0px;
+  margin-left: 0px;
+}

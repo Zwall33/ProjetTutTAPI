@@ -1,0 +1,52 @@
+<html>
+
+<head>   
+  <% include partials/head %>
+</head>
+
+<body> 
+
+  <% include partials/script %>
+ 
+    <nav id="IdMenu" class="Menu">
+    <center><img class="logo" src = "./images/Greencode.png"/></center> 
+        <ul class="Bouton">
+            <li class="principal"><a href="/" target="_top" id="active" class="#Acceuil" onclick="actif('#Acceuil')">Acceuil</a></li>
+            <li class="principal"><a href="#Releves" target="_top" id="#Releves" class="#Releves" onclick="actif('#Releves')">Relevés</a>
+                <ul>
+                    <li id="ferme" class="secondaire"><a href="releves#ancreTempe">Température</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves#ancreTempe">Humidité</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves#ancreLumi">Intensité lumineuse</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves#graphFertilite">Fertilité</a></li>
+                </ul>
+            </li>
+            <li class="principal"><a href="calendrier" target="_top" id="#Calendrier" class="#Calendrier" onclick="actif('#Calendrier')">Calendrier</a></li>
+            <li class="principal"><a href="pompes" target="_top" id="#Pompes" class="#Pompes" onclick="actif('#Pompes')">Pompes</a></li>
+            <li class="principal"><a href="#Contacts" target="_top" id="#Contacts" class="#Contacts" onclick="actif('#Contacts')">Contacts</a></li>
+            <li class="principal"><a href="tuto" target="_top" id="#Tuto" class="#Tuto" onclick="actif('#Tuto')">Tuto</a></li>
+        </ul>
+    </nav>
+
+  <h1 class="index">Bienvenue sur le site dédié au jardin connecté</h1>
+
+    <div class="index">
+    <p id="demo"> Notre site est un projet tutoré réalisé à la Licence professionnelle SARII de Bordeaux.<br>
+     Ce projet a pour but de contrôler un jardin connecté. Les capteurs répartis dans les quatres bacs du jardin collecte des informations sur :
+     <ul class="text">
+      <li> la température</li>
+      <li> l'humidité</li>
+      <li> l'intancité lumineuse</li>
+      <li> la fertilité du sol</li>
+     </ul>
+     Ce site permet aussi de contrôler des pompes, on peut ainsi :
+     <ul class="text">
+        <li> gérer les états</li>
+      <li> gérer les vitesses</li>
+      <li> les programmer grâce au calendrier</li>
+     </ul>
+     L'ensemble de ces données sont presente dans notre base de donnée.<br>
+    </p>
+    </div>
+
+</body>
+</html>

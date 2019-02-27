@@ -1,0 +1,68 @@
+<html>
+
+<head>   
+
+	<% include partials/head_prod %>
+	<!-- info graph > -->
+	<title>Jardin connecté</title>
+
+</head>
+
+<body>
+ 	
+	<% include partials/script_prod %>
+
+   	 <nav id="IdMenu" class="Menu">
+    <center><img class="logo" src = ".\images\Greencode.png"/></center> 
+        <ul class="Bouton">
+            <li class="principal"><a href="/" target="_top" id="#Acceuil" class="#Acceuil" onclick="actif('#Acceuil')">Acceuil</a></li>
+            <li class="principal"><a href="#Releves" target="_top" id="active" class="#Releves" onclick="actif('#Releves')">Relevés</a>
+                <ul>
+                    <li id="ferme" class="secondaire"><a href="#ancreTempe">Température</a></li>
+                    <li id="ferme" class="secondaire"><a href="#ancreTempe">Humidité</a></li>
+                    <li id="ferme" class="secondaire"><a href="#ancreLumi">Intensité lumineuse</a></li>
+                    <li id="ferme" class="secondaire"><a href="#graphFertilite">Fertilité</a></li>
+                </ul>
+            </li>
+            <li class="principal"><a href="calendrier" target="_top" id="#Calendrier" class="#Calendrier" onclick="actif('#Calendrier')">Calendrier</a></li>
+            <li class="principal"><a href="pompes" target="_top" id="#Pompes" class="#Pompes" onclick="actif('#Pompes')">Pompes</a></li>
+            <li class="principal"><a href="#Contacts" target="_top" id="#Contacts" class="#Contacts" onclick="actif('#Contacts')">Contacts</a></li>
+            <li class="principal"><a href="tuto" target="_top" id="#Tuto" class="#Tuto" onclick="actif('#Tuto')">Tuto</a></li>
+        </ul>
+    </nav>
+
+    	<div id="ancreTempe" class="ancreTemperature"></div>
+
+    <div class="temperature">
+		<img src="./images/logo_temperature.png" class="logoTemperature">
+		<p id="temp" class="releves">°C</p>
+	</div>
+
+	<div class="humidite">
+		<img src="./images/logo_humidite.png" class="logoHumidite">
+		<p id="humi" class="releves">%</p>
+	</div>
+	
+	<div id="container" class="graph1"></div>
+
+		<div id="ancreLumi" class="ancreLuminosite"></div>
+
+	<div class="luminosite">
+		<img src="./images/logo_luminosite.png" class="logoHumidite">
+		<p id="lumi" class="releves">%</p>
+	</div> 
+
+	<div id="graphLuminosite" class="graph2"></div>
+ 
+
+
+	<div class="fertilite">
+		<img src="./images/logo_fertilite.png" class="logoHumidite">
+		<p id="fert" class="releves">%</p>
+	</div>  
+
+	<div id="graphFertilite" class="graph3"></div> 
+  
+
+</body>
+</html>

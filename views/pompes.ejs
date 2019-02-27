@@ -1,0 +1,223 @@
+<html>
+
+<head>   
+  
+<% include partials/head_pompes %>
+
+</head>
+
+<body> 
+ 
+    <% include partials/script_pompes %>
+
+    <nav id="IdMenu" class="Menu">
+    <center><img class="logo" src = "./images/Greencode.png"/></center> 
+        <ul class="Bouton">
+            <li class="principal"><a href="/" target="_top" id="#Acceuil" class="#Acceuil" onclick="actif('#Acceuil')">Acceuil</a></li>
+            <li class="principal"><a href="#Releves" target="_top" id="#Releves" class="#Releves" onclick="actif('#Releves')">Relevés</a>
+                <ul>
+                    <li id="ferme" class="secondaire"><a href="releves#ancreTempe">Température</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves#ancreTempe">Humidité</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves#ancreLumi">Intensité lumineuse</a></li>
+                    <li id="ferme" class="secondaire"><a href="releves#graphFertilite">Fertilité</a></li>
+                </ul>
+            </li>
+            <li class="principal"><a href="calendrier" target="_top" id="#Calendrier" class="#Calendrier" onclick="actif('#Calendrier')">Calendrier</a></li>
+            <li class="principal"><a href="pompes" target="_top" id="active" class="#Pompes" onclick="actif('#Pompes')">Pompes</a></li>
+            <li class="principal"><a href="#Contacts" target="_top" id="#Contacts" class="#Contacts" onclick="actif('#Contacts')">Contacts</a></li>
+            <li class="principal"><a href="tuto" target="_top" id="#Tuto" class="#Tuto" onclick="actif('#Tuto')">Tuto</a></li>
+        </ul>
+    </nav>
+
+<TABLE class="pompes">
+  
+  <TR>
+    <TH COLSPAN=2 class="titresousdiv"><h1 class="pompes">Pompe 1</h1></TH>
+
+    <TH COLSPAN=2 class="titresousdiv"><h1 class="pompes">Pompe 2</h1></TH>
+  </TR>
+
+  <TR>
+    
+    <TD class="sousdiv">
+      <TABLE class="radiobutton">
+        <TR>
+          <TD> Vitesse </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe1_1" name="Pompe1" value="1" checked="checked" onchange="variation('Pompe1','1');">Niveau 1
+              <span class="checkmark"></span>
+            </label>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe1_2" name="Pompe1" value="2" onchange="variation('Pompe1','2');">Niveau 2
+              <span class="checkmark"></span>
+            </label> 
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe1_3" name="Pompe1" value="3" onchange="variation('Pompe1','3');">Niveau 3 
+              <span class="checkmark"></span>
+            </label>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe1_4" name="Pompe1" value="4" onchange="variation('Pompe1','4');">Niveau 4
+              <span class="checkmark"></span>
+            </label> 
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+
+    <TD><img id="Pompe1" class="pompe_off" src = "../IMAGES/pompe_off.png" onclick="variation('Pompe1','bouton');"/></TD>
+
+    <TD><img id="Pompe2" class="pompe_off" src = "../IMAGES/pompe_off.png" onclick="variation('Pompe2','bouton');"/></TD>
+
+    <TD class="sousdiv">
+      <TABLE class="radiobutton">
+        <TR>
+          <TD> Vitesse </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe2_1" name="Pompe2" value="1" checked="checked" onchange="variation('Pompe2','1');">Niveau 1
+              <span class="checkmark"></span>
+            </label>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe2_2" name="Pompe2" value="2" onchange="variation('Pompe2','2');">Niveau 2
+              <span class="checkmark"></span>
+            </label>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe2_3" name="Pompe2" value="3" onchange="variation('Pompe2','3');">Niveau 3 
+              <span class="checkmark"></span>
+            </label>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe2_4" name="Pompe2" value="4" onchange="variation('Pompe2','4');">Niveau 4  
+              <span class="checkmark"></span>
+            </label>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+
+    <TR>
+    <TH COLSPAN=2 class="titresousdiv"><h1 class="pompes">Pompe 3</h1></TH>
+
+    <TH COLSPAN=2 class="titresousdiv"><h1 class="pompes">Pompe 4</h1></TH>
+  </TR>
+
+  <TR>
+
+    <TD class="sousdiv">
+      <TABLE class="radiobutton">
+        <TR>
+          <TD> Vitesse </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe3_1" name="Pompe3" value="1" checked="checked" onchange="variation('Pompe3','1');">Niveau 1
+              <span class="checkmark"></span>
+            </label>
+          </TD>          
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe3_2" name="Pompe3" value="2" onchange="variation('Pompe3','2');">Niveau 2
+              <span class="checkmark"></span>
+            </label>
+          </TD>           
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe3_3" name="Pompe3" value="3" onchange="variation('Pompe3','3');">Niveau 3
+              <span class="checkmark"></span>
+            </label>
+          </TD> 
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe3_4" name="Pompe3" value="4" onchange="variation('Pompe3','4');">Niveau 4
+              <span class="checkmark"></span>
+            </label>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+
+    <TD><img id="Pompe3" class="pompe_off" src = "../IMAGES/pompe_off.png" onclick="variation('Pompe3','bouton');"/></TD>
+
+    <TD><img id="Pompe4" class="pompe_off" src = "../IMAGES/pompe_off.png" onclick="variation('Pompe4','bouton');"/></TD>
+
+    <TD class="sousdiv">
+      <TABLE class="radiobutton">
+        <TR>
+          <TD> Vitesse </TD>
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe4_1" name="Pompe4" value="1" checked="checked" onchange="variation('Pompe4','1');">Niveau 1
+              <span class="checkmark"></span>
+            </label>
+          </TD>          
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe4_2" name="Pompe4" value="2" onchange="variation('Pompe4','2');">Niveau 2
+              <span class="checkmark"></span>
+            </label>
+          </TD>          
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe4_3" name="Pompe4" value="3" onchange="variation('Pompe4','3');">Niveau 3
+              <span class="checkmark"></span>
+            </label>
+          </TD>          
+        </TR>
+        <TR>
+          <TD>
+            <label class="container">
+              <input type="radio" id="RadioPompe4_4" name="Pompe4" value="4" onchange="variation('Pompe4','4');">Niveau 4
+              <span class="checkmark"></span>
+            </label>
+          </TD>           
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+
+</TABLE>
+
+</body>
+</html>
